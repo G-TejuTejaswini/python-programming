@@ -1,0 +1,241 @@
+#greatest of two numbers
+
+
+a=int(input())
+b=int(input())
+if a==b:
+    print(a,"is equal to",b)
+elif (a>b):
+    print(a,"is greater than",b)  
+else:   
+    print(a,"is less than",b)
+
+
+
+#Vowel Or Consonants
+
+
+s=input()
+if s in "AEIOUaeiou":
+    print("vowel")
+elif s in "BCDFGHJKLMNPQRSTUVWXYZbcdfghjklmnpqrstuvwxyz":
+    print("consonant")
+else:
+    print("not an alphabet")
+    
+    
+#Grading System
+
+
+marks=int(input())
+if marks==100:
+    print("S")
+elif marks>90 and marks<100:
+    print("A")
+elif marks>80 and marks<90:
+    print("B")
+elif marks>70 and marks<80:
+    print("C")
+elif marks>60 and marks<70:
+    print("D")
+elif marks>50 and marks<60:
+    print("E")
+elif marks<50:
+    print("F")
+else:
+    print("Invalid Input")   
+
+
+
+#Profit or Loss
+
+
+
+print("enter the price of a dozen mangoes")
+cp=float(input())
+print("enter the price at which 1 mango is being sold")
+sp=int(input())
+tsp=sp*12
+if cp>tsp:
+    print("loss:Rs.","%.2f"%(cp-tsp))
+    
+elif cp<tsp:
+    
+    print("profit:Rs.","%.2f"%(tsp-cp))
+    
+else:
+    print("no profit nor loss")
+    
+ 
+ 
+ #Fee Collection
+
+ 
+ 
+ x=input("Enter the Student type \n")
+tf=float(input( "Enter tuition fee \n"))
+if x=="MSDS":
+    bf=float(input("Enter bus fee \n"))
+    print("The fees to be paid by the student is Rs.","%.2f"%(tf+bf))
+elif x=="MSH":
+    hf=float(input("Enter hostel fee \n"))
+    print("The fees to be paid by the student is Rs.","%.2f"%(tf+hf))
+elif x=="MGSDS":
+    bf=float(input("Enter bus fee \n"))
+    print("The fees to be paid by the student is Rs.","%.2f"%(150/100*tf)+bf)
+elif x=="MGSH":
+    hf=float(input("Enter hostel fee \n"))
+    print("The fees to be paid by the student is Rs.","%.2f"%((150/100*tf)+hf))
+else:
+    print("Invalid Input")
+
+        
+    
+#Y2K Problem Detector
+
+
+
+by=int(input("Enter year of Birth \n"))
+cy=int(input("Enter current year \n"))
+if cy>by:
+    s=cy-int(by)
+    print("your age is",s)
+elif cy<by:
+    s=(100-(int(by))+cy)
+    print("your age is",s)
+else:
+    print("Invalid Input")
+
+
+
+#Lab Allocation
+
+
+
+L1=int(input())
+print("Enter x")
+L2=int(input())
+print("Enter y")
+L3=int(input())
+print("Enter z")
+    
+if L3<L2:
+    print("L3 has the minimal seating capacity")
+else:
+    print("L2 has the minimal seating capacity")
+    
+    
+#Gardening 1    
+           
+ 
+ 
+ r=int(input())
+c=int(input())
+n=int(input())
+if n<r*c:
+    if n%c==0:
+        print("yes")
+    elif (n-1)%c==0:
+        print("yes")
+    else:
+        print("no")
+
+
+
+#hotel tariff
+
+
+
+nm=int(input())
+r=float(input())
+d=int(input())
+if (0<nm<=12):
+    if(4<=nm<=6 or 11<=nm<=12):
+        print("Hotel Tariff: Rs.%.2f"%(((0.2*r)+r)*d))
+    else:
+        print("Hotel Tariff: Rs.%.2f"%(r*d))
+else:
+        print("Invalid Input")
+
+ #Rgy lights
+ cs=float(input())
+d=float(input())
+t=float(input())
+s=d*t
+if cs>s:
+    print("yes")
+else:
+    print("no")
+ 
+
+#Budget
+
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+i=float(350.34*a+230.90*b+190.55*c+125.30*d+180.90*e)
+if i<=15000:
+    print("yes")
+else:
+    print("no")
+
+ 
+ 
+ #Sece Dining
+ 
+ 
+ x=input()
+y=int(input())
+if x=="front" and y==1 or x=="rear" and y==2:
+    print("Left Handed")
+else:
+    print("Right Handed")
+
+
+    
+ #Intersection of a Circle
+
+ 
+ 
+ x1=int(input())
+y1=int(input())
+r1=int(input())
+x2=int(input())
+y2=int(input())
+r2=int(input())
+d=(((x1-x2)**2)+((y1-y2)**2))**(1/2)
+if r1+r2==d:
+    print("The circles are tangential")
+     
+elif r1+r2>d:
+    print("The circles overlap")
+else:
+    
+    print("The circles do not overlap")
+  
+  
+
+#Microwave Oven
+
+
+x=int(input("Enter the number of items \n"))
+y=float(input("Enter the single item heating time \n"))
+if x==2:
+    z=y*0.5
+    z=z+y
+    print("The recommended heating time is %.2f"%z)
+elif x==3:
+    z=y*2
+    z=z+y
+    print("The recommended heating time is %.2f"%z)
+elif x>3:
+    print("Number of items is more")
+    
+
+
+
+
+
