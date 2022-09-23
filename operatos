@@ -1,0 +1,122 @@
+#sum and difference
+
+a=int(input())
+b=int(input())
+print(a+b)
+print(a-b)
+
+
+
+#product and division
+
+a=int(input())
+b=int(input())
+print(a*b)
+print(int(a/b))
+print(a%b)
+
+
+
+#swapping of two numbers
+
+a=int(input())
+b=int(input())
+c=a
+a=b
+b=c
+print(a)
+print(b)
+
+
+
+#swapping of without third variable
+
+a=int(input())
+b=int(input())
+(a,b)=(b,a)
+print(a)
+print(b)
+
+
+
+#average calculation
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+f=(a+b+c+d+e)/5
+print(f)
+
+
+#alice in wonderland
+
+n=int(input())
+a=n//10
+b=n%10
+print(a+b)
+
+
+
+#area calculation
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=float(input())
+print(a**2)
+print(b*c)
+print("%.2f"%(3.14*d**2))
+
+
+
+#Fencing the ground
+
+a=int(input())
+b=int(input())
+n=2*(a+b)
+s=(a*b)
+print("Required Length is",n,"m")
+print("Required quantity of carpet is",s,"sqm")
+
+
+
+#Power of a Number
+
+n=int(input())
+s=int(input())
+a=pow(n,s)
+print(a)
+
+
+
+#Simple Interest
+
+a=int(input())
+b=int(input())
+c=float(input())
+i=(a*b*c)/100
+print(i)
+
+
+
+#Splitting into Teams
+
+a=int(input())
+b=int(input())
+i=(a//b)
+s=(a%b)
+print("The number of students in each team is",i,"and left out is",s )
+
+
+
+#Three Idiots
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+n=(a+c)/2
+s=(b+d)/2
+print("binoy's house is located at ",n,s)
